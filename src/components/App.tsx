@@ -2,9 +2,11 @@ import React from 'react';
 import logo from '../logo.svg';
 import './App.css';
 import OrgChartTree from './react_d3_tree'
+import FileTree from './rc_tree'
 
 function App() {
   return (
+    <div>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,7 +24,11 @@ function App() {
       </header>
       <OrgChartTree />
     </div>
-    
+    <div className="FileTree">
+      <FileTree />
+    </div>
+    </div>
+
   );
 }
 
